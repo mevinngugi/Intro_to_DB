@@ -1,2 +1,2 @@
-USE alx_book_store;
-SHOW COLUMNS FROM Books;
+SELECT * from INFORMATION_SCHEMA.COLUMNS;
+WHERE TABLE_CATALOG = "alx_book_store" AND TABLE_NAME = "Books"
