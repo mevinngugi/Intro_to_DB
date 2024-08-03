@@ -4,7 +4,7 @@ try:
     # Database connection details (replace with your own)
     mydb = mysql.connector.connect(
         host="localhost",
-        user="Your Username",
+        user="root",
         password="Your Password",
         # database="mydb"
     )
@@ -17,5 +17,5 @@ try:
     mydb.close()
 
     print("Database connection closed.")
-except:
+except mysql.connector.Error:
     print("Failed to connect to the DB")
